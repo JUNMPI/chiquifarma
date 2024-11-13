@@ -1,5 +1,5 @@
 # Imagen base con Maven para compilar
-FROM maven:3.8.6-openjdk-17-slim AS build
+FROM maven:3.8.4-openjdk-17 AS build
 
 # Establece el directorio de trabajo
 WORKDIR /app
@@ -18,3 +18,4 @@ COPY --from=build /app/target/Farmacia_Chiquifarma-1.0-SNAPSHOT.war /app/app.war
 
 # Comando para ejecutar la aplicación
 CMD ["java", "-jar", "/app/app.war"]
+
