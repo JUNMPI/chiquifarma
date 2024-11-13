@@ -13,9 +13,14 @@ RUN mvn clean install
 # Segunda etapa: imagen para ejecutar el proyecto
 FROM openjdk:17-jdk-slim
 
+# Establece el directorio de trabajo
+WORKDIR /app
+
 # Copia el archivo .war o .jar compilado desde la etapa de construcción
 COPY --from=build /app/target/Farmacia_Chiquifarma-1.0-SNAPSHOT.war /app/app.war
 
-# Comando para ejecutar la aplicación
-CMD ["java", "-jar", "/app/app.war"]
+# Define el puerto en el que la aplicación va a escuchar
+EXPOSE 8080
 
+# Comando para ejecutar la aplicación usando la variable PORT
+CMD ["java", "-jar", "/app/app.war", "--server.port=${PORT:-8080}"]
