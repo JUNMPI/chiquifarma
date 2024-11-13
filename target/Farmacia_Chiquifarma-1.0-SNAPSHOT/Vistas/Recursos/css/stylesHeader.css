@@ -1,0 +1,117 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 nov. 2024, 17:48:11
+    Author     : JUNIOR ALVINES
+*/
+
+/* Estilos para el header de la tienda */
+header {
+    background-color: #f8f9fa; /* Fondo claro */
+    border-bottom: 2px solid #367f2b; /* Línea inferior en el color principal */
+}
+
+header .container {
+    padding: 1rem 0;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+header .col-md-3 a img {
+    max-height: 60px; /* Ajuste de tamaño máximo */
+}
+
+/* Barra de búsqueda */
+header .input-group .form-control {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #367f2b;
+}
+
+header .input-group .btn-outline-secondary {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #367f2b;
+    color: #367f2b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .input-group .btn-outline-secondary:hover {
+    background-color: #367f2b;
+    color: #ffffff;
+}
+
+/* Usuario y Carrito */
+header .text-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .text-right a.btn-link {
+    color: #367f2b;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+header .text-right a.btn-link:hover {
+    color: #a4d518;
+}
+
+header .text-right .btn-outline-primary {
+    border: 1px solid #367f2b;
+    color: #367f2b;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .text-right .btn-outline-primary:hover {
+    background-color: #a4d518;
+    color: #ffffff;
+}
+
+/* Estilos para el texto de saludo */
+header .text-right span {
+    font-size: 1rem;
+    color: #367f2b;
+    font-weight: bold;
+    margin-right: 10px;
+}
+ 
+/* Efecto de fondo oscuro cuando el campo de búsqueda está en foco */
+body.search-active {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el contenedor de búsqueda */
+header .input-group {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cambios cuando el campo de búsqueda está enfocado */
+header .input-group:focus-within {
+    transform: scale(1.1); /* Agranda el campo de búsqueda */
+    box-shadow: 0 0 10px rgba(54, 127, 43, 0.5); /* Sombra de color principal */
+}
+
+/* Color de fondo del campo y borde cuando está enfocado */
+header .input-group .form-control:focus {
+    background-color: #ffffff;
+    border-color: #367f2b; /* Color principal */
+    outline: none; /* Elimina el borde azul */
+}
+
+/* Transición para el botón de búsqueda */
+header .input-group .btn-outline-secondary:focus,
+header .input-group .btn-outline-secondary:hover {
+    background-color: #367f2b;
+    color: #ffffff;
+}

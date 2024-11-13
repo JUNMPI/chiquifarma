@@ -1,0 +1,94 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 nov. 2024, 18:43:57
+    Author     : JUNIOR ALVINES
+*/
+/* Archivo styles.css */
+
+/* styles.css */
+
+/* styles.css */
+/* Estilo para centrar el formulario y aplicar fondo blanco */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* Fondo completamente blanco */
+}
+
+.form-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para el efecto 3D */
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.form-box:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
+
+.form-box h1 {
+    font-size: 2rem;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.form-box form {
+    width: 100%;
+}
+
+.form-box input, .form-box button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna para los inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.form-box input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efecto de foco */
+}
+
+.form-box button {
+    background-color: #a4d518;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados para botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #367f2b;
+}
+
+.form-box .btn-block {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+/* Ajustes para el contenedor del título */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste para el logo */
+.title-container .logo {
+    width: 200px; /* Tamaño más pequeño del logo */
+    height: auto;
+    margin-left: 5px; /* Espacio entre el título y el logo */
+}
